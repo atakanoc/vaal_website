@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1607.55" height="875.604" viewBox="0 0 1607.55 875.604">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.899;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #132747;
+      }
+
+      .cls-4 {
+        fill: #191919;
+      }
+
+      .cls-5 {
+        filter: url(#Path_3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#002294"/>
+      <stop offset="0.49" stop-color="#01e4e5"/>
+      <stop offset="0.57" stop-color="#23c7d9"/>
+      <stop offset="0.76" stop-color="#797fbb"/>
+      <stop offset="1" stop-color="#f21c92"/>
+    </linearGradient>
+    <filter id="Path_3" x="0" y="0" width="1607.55" height="875.604" filterUnits="userSpaceOnUse">
+      <feOffset dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="box" class="cls-1" transform="translate(0 -0.229)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(30 20.024)">
+      <path id="Path_1" data-name="Path 1" class="cls-2" d="M1236.243,60.962l-10.587-36.944c-.792-2.769-4.247-4.5-7.72-3.864H387.379c-3.455-.632-6.91,1.1-7.711,3.864L369.081,60.962H30l.018,3.562H1577.541l-.053-3.562H1236.234Z" transform="translate(-30 -20.024)"/>
+    </g>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(30 23.229)">
+      <path id="Path_2" data-name="Path 2" class="cls-3" d="M1768,69.6h-.009l.009.214Z" transform="translate(-220.449 -28.662)"/>
+      <g class="cls-5" transform="matrix(1, 0, 0, 1, -30, -23)">
+        <path id="Path_3-2" data-name="Path 3" class="cls-4" d="M1577.541,64.562H1233.109l-10.5-36.944c-.784-2.769-4.212-4.5-7.658-3.864H391.466c-3.428-.632-6.856,1.1-7.64,3.864l-10.5,36.944H30.018v0H30V839.227H1577.55V64.562Z" transform="translate(0 -0.62)"/>
+      </g>
+    </g>
+  </g>
+</svg>
