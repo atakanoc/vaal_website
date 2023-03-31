@@ -63,49 +63,50 @@
   flex-wrap: wrap;
   background-color: #0B0F2E;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: visible;
 }
 
 .logo {
-  height: 25vh;
-  position: relative; /* Set the position property to absolute */
-  top: 50%; /* Position the logo at the middle of the quoteBlock */
-  transform: translateY(-50%); /* Shift the logo upwards by half of its height */
+  height: 170%;
   object-fit: contain;
   margin-left: 7vh;
 }
 
-
-
 .quote {
-  max-height: 80%;
-  font-size: 2vh; /* Adjust the base font-size */
+  font-size: 4vh;
   color: #971D91;
   text-align: center; /* Center align the text within itself */
   font-family: ethnocentric, sans-serif;
   font-weight: 700;
   font-style: normal;
-  margin-left: 3vh; /* Set a left margin for the quote */
+  margin-left: 9vh; /* Set a left margin for the quote */
 }
+
+.quoteWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+
 
 /* ... existing media queries ... */
 
 /* Update media query to handle stacking behavior */
 @media (max-width: 1000px) {
-  .quoteBlock {
-    justify-content: center;
+  .quoteWrapper {
+    flex-direction: column;
+    gap: 30px;
   }
 
   .logo {
     margin-left: 0;
-    margin-bottom: 1vh;
   }
 
   .quote {
-    margin-top: 1vh;
     margin-left: 0;
-    width: 80%; /* Set the width for the quote to center align relative to the page */
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 

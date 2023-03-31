@@ -29,13 +29,17 @@ export default function Home() {
                 </div>
             </div>
 
+
             <div className={styles.quoteBlock}>
-                <img className={styles.logo} src="alien_logo.png" alt="Logo"/>
-                <h2 className={styles.quote}>
-                    Space themed ranks from<br/>
-                    Meteor -&gt; Nebula -&gt; Multiverse
-                </h2>
+                <div className={styles.quoteWrapper}>
+                    <img className={styles.logo} src="alien_logo.png" alt="Logo" />
+                    <h2 className={styles.quote}>
+                        Space themed ranks from<br />
+                        Meteor -&gt; Nebula -&gt; Multiverse
+                    </h2>
+                </div>
             </div>
+
 
             {/* Your other components and content go here */}
         </div>
