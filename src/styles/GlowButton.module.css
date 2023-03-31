@@ -2,8 +2,10 @@
     border: none;
     color: white;
     text-align: center;
-    font-family: Ethnocentric;
+    font-family: ethnocentric, sans-serif;
     cursor: pointer;
+    font-size: 1.25rem;
+    padding: 1em 1.5em;
     outline: none;
     transition: background-color 0.2s, box-shadow 0.2s;
     border-radius: 999px;
@@ -20,31 +22,8 @@
     box-shadow: 0 0 4px currentColor;
 }
 
-.large {
-    font-size: 1.5625rem;
-    padding: 1.25rem 2.5rem;
-}
-
-.medium {
-    font-size: 1.25rem;
-    padding: 1rem 2rem;
-}
-
-.small {
-    font-size: 0.625rem;
-    padding: 0.625rem 1.25rem;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .glowButton {
-        font-size: 1rem;
-        padding: 1rem 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .glowButton {
-        font-size: 1rem;
-        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
     }
 }

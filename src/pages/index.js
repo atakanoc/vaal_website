@@ -23,10 +23,18 @@ export default function Home() {
                         and competitive gaming experience. Open to all skill levels.
                     </h2>
                     <div className={styles.buttonGroup}>
-                        <GlowButton color="#3786C9" size="large">Join Us</GlowButton>
+                        <GlowButton color="#3786C9" size="medium">Join Us</GlowButton>
                         <GlowButton color="#8E35B9" size="large">Features</GlowButton>
                     </div>
                 </div>
+            </div>
+
+            <div className={styles.quoteBlock}>
+                <img className={styles.logo} src="alien_logo.png" alt="Logo"/>
+                <h2 className={styles.quote}>
+                    Space themed ranks from<br/>
+                    Meteor -&gt; Nebula -&gt; Multiverse
+                </h2>
             </div>
 
             {/* Your other components and content go here */}
@@ -34,12 +42,11 @@ export default function Home() {
     )
 }
 
-const GlowButton = ({ color, size, children }) => {
+const GlowButton = ({ color, children }) => {
     return (
         <button
             style={{ backgroundColor: color, boxShadow: `0 0 6px ${color}` }}
-            className={`${glowButtonStyles.glowButton} ${glowButtonStyles.button} ${glowButtonStyles[size]}`}
-        >
+            className={`${glowButtonStyles.glowButton} ${glowButtonStyles.button}}`}>
             {children}
         </button>
     );
