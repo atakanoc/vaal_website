@@ -16,7 +16,7 @@
 .roundedBox {
   width: 100%;
   max-height: 80%;
-  max-width: 700px;
+  max-width: 80%;
   min-height: 35vh;
   margin: 10%;
   background-color: rgba(21, 39, 71, 0.95);
@@ -91,38 +91,121 @@
   z-index: 1;
 }
 
-@media (max-width: 700px) {
+/* Your CSS styles for small mobile devices (portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem; /* Adjust the heading font size */
+  }
+  .subheading {
+    font-size: 1rem; /* Adjust the subheading font size */
+  }
+  .buttonGroup {
+    gap: 20px; /* Adjust the gap between the buttons */
+  }
+  .backgroundSection {
+    min-height: 500px;
+  }
+}
+
+/* Your CSS styles for medium mobile devices (portrait) and small mobile devices (landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .heading {
+    font-size: 1.5rem; /* Adjust the heading font size */
+  }
+  .subheading {
+    font-size: 1rem; /* Adjust the subheading font size */
+  }
+  .buttonGroup {
+    gap: 40px; /* Adjust the gap between the buttons */
+  }
+  .backgroundSection {
+    min-height: 330px;
+  }
+}
+
+/* Your CSS styles for large mobile devices (portrait) and tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .heading {
     font-size: 2rem; /* Adjust the heading font size */
   }
-
   .subheading {
     font-size: 1.5rem; /* Adjust the subheading font size */
   }
+  .buttonGroup {
+    gap: 80px; /* Adjust the gap between the buttons */
+  }
+  .backgroundSection {
+    min-height: 400px;
+  }
 }
 
-
-
-@media (max-width: 1000px) {
-  .quoteWrapper {
-    flex-direction: column;
+/* Your CSS styles for tablets (landscape) and small desktop screens */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .heading {
+    font-size: 3rem; /* Adjust the heading font size */
   }
-
-  .quoteBlock {
-    height: 40vh;
+  .subheading {
+    font-size: 2rem; /* Adjust the subheading font size */
   }
-
-  .logo {
-    margin-left: 0;
-    height: 80%;
-    transform: translateY(-20%);
+  .buttonGroup {
+    gap: 80px; /* Adjust the gap between the buttons */
   }
-
-  .quote {
-    margin-left: 0;
-    transform: translateY(-20%);
-    font-size: 1.7vh;
+  .backgroundSection {
+    min-height: 550px;
   }
-
 }
+
+/* Your CSS styles for medium desktop screens */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .heading {
+    font-size: 4rem; /* Adjust the heading font size */
+  }
+  .subheading {
+    font-size: 3rem; /* Adjust the subheading font size */
+  }
+  .buttonGroup {
+    gap: 140px; /* Adjust the gap between the buttons */
+  }
+  .backgroundSection {
+    min-height: 850px;
+  }
+}
+
+/* Your CSS styles for large desktop screens */
+@media (min-width: 1441px) {}
+
+/*@media (max-width: 700px) {*/
+/*  .heading {*/
+/*    font-size: 2rem; !* Adjust the heading font size *!*/
+/*  }*/
+
+/*  .subheading {*/
+/*    font-size: 1.5rem; !* Adjust the subheading font size *!*/
+/*  }*/
+/*}*/
+
+
+
+/*@media (max-width: 1000px) {*/
+/*  .quoteWrapper {*/
+/*    flex-direction: column;*/
+/*  }*/
+
+/*  .quoteBlock {*/
+/*    height: 40vh;*/
+/*  }*/
+
+/*  .logo {*/
+/*    margin-left: 0;*/
+/*    height: 80%;*/
+/*    transform: translateY(-20%);*/
+/*  }*/
+
+/*  .quote {*/
+/*    margin-left: 0;*/
+/*    transform: translateY(-20%);*/
+/*    font-size: 1.7vh;*/
+/*  }*/
+
+/*}*/
 
