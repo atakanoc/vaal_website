@@ -13,7 +13,7 @@ export default function Home() {
                 <link rel="stylesheet" href="https://use.typekit.net/ein4tgq.css"/>
             </Head>
 
-            <div className={styles.backgroundImage}>
+            <BackgroundSection backgroundImage={"/landing_background_1.svg"}>
                 <div className={styles.roundedBox}>
                     <h1 className={`${styles.heading} ${styles.breakLines}`}>
                         Valorant Andromeda{'\n'}Ascendants League
@@ -27,7 +27,7 @@ export default function Home() {
                         <GlowButton color="#8E35B9" size="large">Features</GlowButton>
                     </div>
                 </div>
-            </div>
+            </BackgroundSection>
 
 
             <div className={styles.quoteBlock}>
@@ -40,6 +40,8 @@ export default function Home() {
                 </div>
             </div>
 
+            <BackgroundSection backgroundImage={"/landing_background_2.svg"}>
+            </BackgroundSection>
 
             {/* Your other components and content go here */}
         </div>
@@ -55,5 +57,15 @@ const GlowButton = ({ color, children }) => {
         </button>
     );
 };
+
+const BackgroundSection = ({ children, backgroundImage }) => {
+    return (
+        <div
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+            className={styles.backgroundSection}>
+            {children}
+        </div>
+    );
+}
 
 

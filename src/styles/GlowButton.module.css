@@ -22,7 +22,7 @@
     box-shadow: 0 0 4px currentColor;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .glowButton {
         font-size: 0.75rem;
     }
