@@ -4,7 +4,7 @@
     text-align: center;
     font-family: ethnocentric, sans-serif;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 0.7rem;
     padding: 1em 1.5em;
     outline: none;
     transition: background-color 0.2s, box-shadow 0.2s;
@@ -20,14 +20,6 @@
 .glowButton:active {
     filter: brightness(0.85);
     box-shadow: 0 0 4px currentColor;
-}
-
-
-/* Your CSS styles for small mobile devices (portrait) */
-@media (min-width: 320px) and (max-width: 480px) {
-    .glowButton {
-        font-size: 0.55rem;
-    }
 }
 
 /* Your CSS styles for medium mobile devices (portrait) and small mobile devices (landscape) */
@@ -47,17 +39,21 @@
 /* Your CSS styles for tablets (landscape) and small desktop screens */
 @media (min-width: 1025px) and (max-width: 1280px) {
     .glowButton {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
 /* Your CSS styles for medium desktop screens */
 @media (min-width: 1281px) and (max-width: 1440px) {
     .glowButton {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
 /* Your CSS styles for large desktop screens */
-@media (min-width: 1441px) {}
+@media (min-width: 1441px) {
+    .glowButton {
+        font-size: 1.5rem;
+    }
+}
 
