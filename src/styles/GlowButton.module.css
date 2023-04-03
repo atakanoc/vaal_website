@@ -22,38 +22,26 @@
     box-shadow: 0 0 4px currentColor;
 }
 
+/* Portrait devices */
+@media (max-width: 479px) and (orientation: portrait) {
+    .glowButton {
+        font-size: 1.75rem;
+    }
+}
+
 /* Your CSS styles for medium mobile devices (portrait) and small mobile devices (landscape) */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 768px) and (orientation: portrait) {
     .glowButton {
-        font-size: 0.65rem;
+        font-size: 1.75rem;
     }
 }
 
-/* Your CSS styles for large mobile devices (portrait) and tablets (portrait) */
-@media (min-width: 768px) and (max-width: 1024px) {
+
+/* Your CSS styles for medium mobile devices (portrait) and small mobile devices (landscape) */
+@media (max-width: 992px) and (orientation: portrait) {
     .glowButton {
-        font-size: 0.9rem;
+        font-size: 1.75rem;
     }
 }
 
-/* Your CSS styles for tablets (landscape) and small desktop screens */
-@media (min-width: 1025px) and (max-width: 1280px) {
-    .glowButton {
-        font-size: 1rem;
-    }
-}
-
-/* Your CSS styles for medium desktop screens */
-@media (min-width: 1281px) and (max-width: 1440px) {
-    .glowButton {
-        font-size: 1.2rem;
-    }
-}
-
-/* Your CSS styles for large desktop screens */
-@media (min-width: 1441px) {
-    .glowButton {
-        font-size: 1.5rem;
-    }
-}
 

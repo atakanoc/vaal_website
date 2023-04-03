@@ -16,7 +16,6 @@
 
 .roundedBox {
   min-height: 35%;
-  width: 80vw;
   background-color: rgba(21, 39, 71, 0.95);
   border-radius: 50px;
   display: flex;
@@ -24,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 2vh;
   padding: 2rem;
 }
 
@@ -89,10 +88,10 @@
   z-index: 1;
 }
 
-/* Your CSS styles for medium mobile devices (portrait) and small mobile devices (landscape) */
-@media (min-width: 480px) and (max-width: 767px) {
+/* Portrait devices */
+@media (max-width: 479px) and (orientation: portrait) {
   .roundedBox {
-    max-width: 400px;
+    width: 80vw;
   }
   .heading {
     font-size: 1.5rem; /* Adjust the heading font size */
@@ -101,86 +100,49 @@
     font-size: 1rem; /* Adjust the subheading font size */
   }
   .buttonGroup {
-    gap: 40px; /* Adjust the gap between the buttons */
+    gap: 10vw; /* Adjust the gap between the buttons */
   }
   .backgroundSection {
-    height: 350px;
+    height: 80vh;
   }
 }
 
-/* Your CSS styles for large mobile devices (portrait) and tablets (portrait) */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Your CSS styles for medium mobile devices (portrait) and small mobile devices (landscape) */
+@media (max-width: 768px) and (orientation: portrait) {
   .roundedBox {
-    max-width: 400px;
+    width: 65vw;
   }
   .heading {
-    font-size: 1.5rem; /* Adjust the heading font size */
+    font-size: 1.75rem; /* adjust the heading font size */
   }
   .subheading {
-    font-size: 1.2rem; /* Adjust the subheading font size */
+    font-size: 1.25rem; /* adjust the subheading font size */
   }
   .buttonGroup {
-    gap: 40px; /* Adjust the gap between the buttons */
+    gap: 8vw; /* adjust the gap between the buttons */
   }
   .backgroundSection {
-    height: 400px;
-    /*max-height: 500px;*/
+    height: 80vh;
   }
 }
 
-/* Your CSS styles for tablets (landscape) and small desktop screens */
-@media (min-width: 1025px) and (max-width: 1280px) {
+
+/* Your CSS styles for medium mobile devices (portrait) and small mobile devices (landscape) */
+@media (max-width: 992px) and (orientation: portrait) {
   .roundedBox {
-    max-width: 500px;
+    width: 65vw;
   }
   .heading {
-    font-size: 2rem; /* Adjust the heading font size */
+    font-size: 2.25rem; /* adjust the heading font size */
   }
   .subheading {
-    font-size: 1.5rem; /* Adjust the subheading font size */
+    font-size: 1.75rem; /* adjust the subheading font size */
   }
   .buttonGroup {
-    gap: 40px; /* Adjust the gap between the buttons */
+    gap: 8vw; /* adjust the gap between the buttons */
   }
   .backgroundSection {
-    min-height: 450px;
+    height: 80vh;
   }
 }
 
-/* Your CSS styles for medium desktop screens */
-@media (min-width: 1281px) and (max-width: 1440px) {
-  .roundedBox {
-    max-width: 600px;
-  }
-  .heading {
-    font-size: 2.5rem; /* Adjust the heading font size */
-  }
-  .subheading {
-    font-size: 1.75rem; /* Adjust the subheading font size */
-  }
-  .buttonGroup {
-    gap: 45px; /* Adjust the gap between the buttons */
-  }
-  .backgroundSection {
-    min-height: 750px;
-  }
-}
-
-/* Your CSS styles for large desktop screens */
-@media (min-width: 1441px) {
-  .roundedBox {
-    max-width: 800px;
-  }
-  .heading {
-    font-size: 3.5rem; /* Adjust the heading font size */
-  }
-  .subheading {
-    font-size: 2.5rem; /* Adjust the subheading font size */
-  }
-  .buttonGroup {
-    gap: 80px; /* Adjust the gap between the buttons */
-  }
-  .backgroundSection {
-    min-height: 1000px;
-  }
-}
